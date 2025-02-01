@@ -1,13 +1,11 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
-import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 
 import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
-import { fontSans } from "@/config/fonts";
-import { Navbar } from "@/app/components/navbar";
+import {fontSans} from "@/config/fonts"
 
 export const metadata: Metadata = {
   title: {
@@ -34,11 +32,12 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <head />
+      <head >
+        <title>KRC20 CHECKER</title>
+      </head>
       <body
         className={clsx(
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable,
+          "min-h-screen bg-background antialiased ", fontSans.className
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
