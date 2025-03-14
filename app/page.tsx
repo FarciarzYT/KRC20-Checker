@@ -1,6 +1,6 @@
 import React from "react";
 
-import FundChecker from "@/app/src/components/FundChecker";
+import FundChecker from "./src/components/fund-checker/FundChecker";
 
 export default function Home() {
   return (
@@ -9,3 +9,4 @@ export default function Home() {
     </div>
   );
 }
+
